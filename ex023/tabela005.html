@@ -4,11 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio de Tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-decoration: underline;
+            background-color: aquamarine;
+        }
+
+        h1{
+            background-color: white;
+            color: brown;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+            }
+
+            th, td{
+                border: 1px solid black;
+                padding: 8px;
+            }
+
+            td{
+                text-align: center;
+            }
+
+            tr.destaque{
+                background-color: chartreuse;
+            }
+
+            col.cnome{
+                background-color: chartreuse;
+            }
+
+            col.csexo{
+                background-color: yellow;
+            }
+
+            col.cidade{
+                background-color: red ;
+
+            }
+
+            col.cprof{
+                background-color: cyan;
+            }
+    </style>
 </head>
 <body>
     <h1>Exercicio de Tabela</h1>
 
     <table>
+
+        <colgroup>
+
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+
+        </colgroup>
         <caption>Cadastro</caption>
 
         <tr>
@@ -54,7 +118,7 @@
         </tr>
 
         <tr>
-            <td>Otavio</td>
+            <td>Otávio</td>
             <td>M</td>
             <td>22</td>
             <td>Nutricionista</td>
